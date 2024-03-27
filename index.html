@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="reset.css"> 
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>                  
+        <img src="imagen/logo.png" alt="Logotipo de Alura y Oracle" class="imagen">
+        <h1 class="encabeza">ENCRIPTADOR DE TEXTO</h1>               
+    </header>
+
+    <main>
+        <section>
+            <div class="primera-seccion">
+                <div>
+                    <textarea class="texto-aencriptar" placeholder="Texto a encriptar"></textarea>
+                </div>
+
+                <div class="terminos">
+                    <p>Introduce solo letras minusculas y sin acentos</p>
+                </div>
+
+                <div class="botones">
+                    <button class="btnencriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btndesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                    <button class="btnborrar" onclick="borrar()">Borrar</button>
+                
+                
+                </div>
+            </div>
+           
+        </section>
+
+        <section class="texto-encriptado">
+            <textarea class="mensaje-encriptado"></textarea>
+            <div>
+                <button class="copiar" onclick="copiarcontenido()">Copiar</button>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>  <!--Etiqueta especial para el Pie  de pagina --->
+        <p class="copyright"> &copy Copyryght- Encriptador de Texto- Nei Ramirez Gonzalez </p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

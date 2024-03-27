@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1em;
+}
+header img{
+    width: 185px;    
+    transition: 600ms;
+    box-shadow: 2px 2px 4px 2px #8281e5;
+    border-radius: 15px;
+    margin: 0 2%;
+}
+
+header img:hover{
+    opacity: 0.2;
+}
+.encabeza{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin-right: 40%;
+    font-size: 21px;
+    transition: 400ms;
+}
+.encabeza:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap:wrap;
+}
+.primera-seccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.texto-aencriptar{
+    font-size: 18px;
+    width: 635px;
+    height: 380px;
+    background: rgb(194, 194, 213);
+    border: none;
+    border-radius: 20px;
+    resize: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-indent: 1em;    
+}
+.terminos{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+}
+.botones{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 35px;    
+    flex-wrap: wrap; 
+}
+div button{
+    width: 175px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #0a3371;
+    padding: 6px 30px;
+    border-radius: 20px;
+    transition: 1s all;
+    cursor: pointer;
+    color: #ffffff;  
+    flex-wrap: wrap;
+}
+div button:hover{
+    background: #4d71a8;
+    transform: scale(1.1);
+}
+.texto-encriptado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+    flex-wrap: wrap;    
+}
+.mensaje-encriptado{
+    font-size: 18px;
+    width: 635px;
+    height: 380px;
+    background: rgb(194, 194, 213);
+    border: none;
+    border-radius: 20px;
+    resize: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-indent: 1em;     
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    margin: 1em;
+    background-color: #0a3371;
+    color: #ffffff;
+    padding: 1%;
+}
+
+@media screen and (max-width:480px) { /*Si encuentras una pantalla de hasta 480px poner el fondo de color rojo*/
+    .encabeza{
+        font-size: 17px;
+        text-align: center;
+        gap: 1%;
+        margin: 1em auto;
+    }
+    header{
+        flex-direction: column-reverse;
+        align-items: center;              
+    }
+    .imagen{
+        width: 145px;
+    }
+
+    .primera-seccion{
+        gap: 1px;
+    }
+
+    .texto-aencriptar{       
+        height: 200px;
+    }
+
+    .terminos{
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        gap: 1%;
+        margin: 1em auto;
+    }
+
+    .botones{
+        flex-direction: column;
+        gap: 5px;
+    }
+      
+    .texto-aencriptar, .mensaje-encriptado{
+        width: 100%;
+    }
+    .texto-encriptado{
+        gap: 1px;
+    }
+
+    .mensaje-encriptado{
+        height: 200px;
+    }
+
+    footer{
+        font-size: 10px;
+        align-items: center;
+    }
+}
